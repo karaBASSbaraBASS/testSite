@@ -1,0 +1,63 @@
+.rightContentBlock {
+	width: 100%;
+}
+.videoLessons__wrap {
+	margin: 1.875rem 3.75rem;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.videoLessons__item {
+
+}
+.adaptiveRelation {
+	position: relative;
+	iframe {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+.adaptiveRelation__ration {
+	padding-top: 56.25%;
+	height: 0;
+	background-color: #000;
+}
+.videoLessons__cover {
+	background-image: url('../img/videoLessons/cover.jpg');
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	opacity: 1;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.videoLessons__cover:hover {
+	opacity: 0.8;
+	.videoLessons__coverPlay {
+		opacity: 1;
+	}
+}
+.videoLessons__coverPlay {
+	background-image: url('../img/videoLessons/play.png');
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+		width: 72px;
+		height: 72px;
+		top: calc(50% - 36px);
+		left: calc(50% - 36px);
+	opacity: 0.8;
+}
+.modal-dialog {
+	max-width: 640px !important;
+}

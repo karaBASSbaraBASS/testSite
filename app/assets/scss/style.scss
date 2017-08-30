@@ -1,0 +1,18 @@
+@import "bootstrap.css";
+@import "scssFontAwesome/font-awesome.scss";
+@import "fonts.scss";
+@import "header.scss";
+@import "mainCTA.scss";
+@import "advantages.scss";
+@import "downloadApp.scss";
+@import "news.scss";
+@import "aboutUs.scss";
+@import "awards.scss";
+@import "footer.scss";
+@import "leftSidebar.scss";
+@import "rightContentBlock.scss";
+@import "education.scss";
+
+.mainSection {
+	display: flex;
+}

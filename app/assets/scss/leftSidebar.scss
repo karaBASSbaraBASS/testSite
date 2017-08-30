@@ -1,0 +1,33 @@
+#leftSidebar {
+	background-color: #f7f7f7;
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+}
+.leftSidebar__menu {
+	margin-top: 2.625rem;
+	margin-left: 3.75rem;
+	margin-right: 3.75rem;
+	.active a{
+		&:before {
+			content: " ";
+			position: absolute;
+			color: #fff;
+			height: 1.5rem;
+			width: 5px;
+			left: 0;
+			background-color: #ff0000;
+		}
+	}
+	li {
+		position: relative;
+		padding-left: 1.25rem;
+		a {
+			display: block;
+			color: #303030 !important;
+			font-family: Helvetica;
+			font-size: 1.25rem;
+			padding: 0.625rem 0;
+		}
+	}
+}

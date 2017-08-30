@@ -1,0 +1,478 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+html {
+  font-size: 16px;
+}
+body {
+  overflow-x: hidden;
+  background-color: #f2f2f2;
+  
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+  
+  -webkit-font-smoothing: antialiased; // сделает фон более округлым при масштабировании
+  -webkit-overflow-scrolling: touch; // позволит скролить тачскрином
+  
+  margin-top: 70px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  color: #333;
+}
+p {
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+.centered {
+  text-align: center;
+}
+a {
+  color: #f85c37 !important;
+  &:hover, &:focus {
+    color: #7b7b7b !important;
+    text-decoration: none;
+    outline: #000;
+  }
+}
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  /*height: 100%;*/
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.content {
+  width: 100%;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+.footer {
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.navbar {
+  height: 120px;
+  align-items: center;
+  flex-direction: row !important;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+  
+.navbar-toggler {
+  position: relative !important;
+  margin-top: 0px;
+  display: block;
+}
+.navbar-toggler .icon-bar {
+      background-color: #888;
+    }
+
+.navbar-fixed-top {
+/* цепляет хедер к верхней части екрана */
+}
+.container {
+  width:  100%;
+    -webkit-justify-content:  space-around;
+            justify-content:  space-around;
+}
+.navbar-collapse {
+    -webkit-justify-content:  end;
+            justify-content:  end;
+}
+.nav li {
+  margin-left:  10px;
+}
+.nav li a{
+  display: block;
+  font-family: Helvetica;
+  font-size: 18px;
+  color: #242424 !important;
+  &:hover {
+    text-decoration: none; 
+    color: #fb0007 !important;
+    text-decoration: none;
+  }
+}
+
+.nav .active a {
+    text-decoration: none; 
+    color: #fb0007 !important;
+    text-decoration: none;
+}
+
+/* рисуем иконку гамбургера из трех горизонтальных линий */
+.hamburger {
+  position: relative;
+  display: block;
+  width: 28px;
+  height: 30px;
+}
+.hamburger1,
+.hamburger2,
+.hamburger3 {
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  width: 28px;
+  background: #545454;
+  transition: all 200ms ease-in-out;
+  z-index: 10;
+}
+.hamburger1 {
+  top: calc(50% - 10px);
+}
+  
+.hamburger3 {
+  top: calc(50% + 10px);
+}
+/* Добавим анимацию, первую и третью полосу ставим под 45град. среднюю заливаем цветом фона. */
+.convert .hamburger1 {
+  top: 50%;
+  transform: rotate(45deg);
+}
+.convert .hamburger2 {
+  background-color: transparent;
+}
+.convert .hamburger3 {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+.navbar-toggler:hover {
+  cursor: pointer;
+}
+.navbar__logo {
+  display: flex;
+  align-items: center;
+}
+.logoImg {
+  background: url("../img/logo/logo.png") no-repeat;
+  background-size: 80px auto;
+  height: 80px;
+  width: 80px;
+}
+.logo2Img {
+  background: url("../img/logo/cryptofx.png") no-repeat;
+  background-size: auto;
+  height: 33px;
+  width: 150px;
+}
+.toggleButton {
+  margin-top: 7px;
+}
+.toggleMenu {
+  position: relative;
+  margin-right: 10px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      a {
+        line-height: 50px;
+      }
+    }
+  }
+}
+.headerWrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.headerItems {
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
+}
+.registerBut {
+  max-height: 50px;
+  background-color: #ff0000;
+  border: 2px solid #ff0000;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  span {
+    padding: 10px 20px;
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: 18px;
+  }
+  &:hover {
+    background-color: #fff;
+    span {
+      color: #ff0000;
+    }
+  }
+}
+.loginBut {
+  max-height: 50px;
+  background-color: #23a43d;
+  border: 2px solid #23a43d;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  span {
+    padding: 10px 20px;
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: 18px;
+  }
+  &:hover {
+    background-color: #fff;
+    span {
+      color: #23a43d;
+    }
+  }
+}
+.langSelect__wrap {
+  position: relative;
+  color: #555555;
+  font-family: Helvetica;
+  font-size: 18px;
+  cursor: pointer;
+  .langCurent {
+    display: flex;
+    padding: 10px 20px;
+    span {
+      position: relative;
+      color: #555555;
+      font-family: Helvetica;
+      font-size: 18px;
+    }
+    i {
+      margin-left: 5px;
+      position: absolute;
+      top: 15px;
+      right: 0;
+    }
+  }
+  .langCurent:hover i {
+    color: #fb0007;
+  }
+  .langSelect__items {
+    position: absolute;
+    background: #fff;
+    z-index: 999;
+    display: none;
+    .langSelect__item {
+      a {
+        padding: 10px 20px;
+        position: relative;
+        color: #555555 !important;
+        font-family: Helvetica;
+        font-size: 18px;
+        &:hover {
+          color: #fb0007 !important;
+        }
+      }
+    }
+  }
+}
+.nav__item span{
+  display: block;
+}
+.nav__item + .nav__item{
+  margin-left: 10px;
+}
+.mainColumn {
+  padding: 0 3.75rem !important;
+}
+.headerWrapRight {
+  display: flex;
+
+}
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) {
+
+}
+
+
+
+@media (max-width: 991px) { 
+   html {
+    font-size: 14px;
+  }
+  .toggleMenu {
+    z-index: 999;
+    background-color: #fff;
+    position: absolute !important;
+    width: 100%;
+    left: 0px;
+    top: 120px;
+  }
+  .toggleMenu .nav li a {
+    padding: 10px;
+  }
+  .nav li {
+  margin-left: 0px;
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+  .nav .active {
+    background-color: #ddd;
+  }
+}
+
+// Medium devices (tablets, less than 768px)
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+  html {
+    font-size: 10px;
+  }
+}

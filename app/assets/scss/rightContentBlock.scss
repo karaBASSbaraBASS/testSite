@@ -1,0 +1,123 @@
+.rightContentBlock {
+	
+}
+.newsContentBlock {
+	display: flex;
+	flex-direction: column;
+	margin: 0 3.75rem;
+}
+
+.newsContentBlock__mainNewsWr {
+	position: relative;
+	width: 100%;
+	.newsContentBlock__ration {
+		padding-top: 70%;
+		height: 0;
+	}
+	.newsContentBlock__mainNewsImg {
+		background-image: url('../img/news/news.jpg');
+		background-size: cover;
+		background-position: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+.newsContentBlock__caption {
+	padding: 10px 0; 
+}
+.newsContentBlock__item {
+	display: flex;
+	padding: 1.5rem 0;
+	border-top: 1px solid #dddddd;
+	&:first-child {
+		border-top: none;
+	}
+}
+
+.newsContentBlock__descr {
+	color: #555555;
+	font-family: Helvetica;
+	font-size: 1.125rem;
+}
+.readMoreNews {
+	color: #ff0000 !important;
+	font-family: Helvetica;
+	font-size: 1.125rem;
+	font-weight: 700;
+	&:after {
+		content: "\f105";
+		font-family: FontAwesome;
+	    font-style: normal;
+	    font-weight: normal;
+	    text-decoration: inherit;
+	/*--adjust as necessary--*/
+	    color: inherit;
+	    font-size: 1rem;
+	    padding-right: 0.5em;
+	}
+}
+.paginationWrap {
+	display: flex;
+	margin: 3.75rem;
+}
+.news__pagination {
+	display: flex;
+	margin-left: auto;
+	.pages {
+		display: flex;
+		margin: 0 15px;
+	}
+		.arrow__prev,
+		.arrow__next,
+		.page__number {
+			border: 2px solid #555555;
+			a {
+				display: block;
+				padding: 8px 14px;
+				color: #555555 !important;
+				font-family: Helvetica;
+				font-size: 20px;
+				&:hover {
+					color: #ff0000 !important;
+					font-family: Helvetica;
+					font-size: 20px;
+					text-decoration: none;
+				}
+			}
+			&:hover {
+				border: 2px solid #ff0000;
+			}
+		}
+		.pages .active {
+			border: 2px solid #ff0000;
+			a {
+				color: #ff0000 !important;
+			}
+		}
+		li + li {
+			margin-left: 15px;
+		}
+		.arrow__prev,
+		.arrow__next {
+			display: block;
+			padding: 8px 14px;
+			color: #555555 !important;
+			font-family: Helvetica;
+			font-size: 20px;
+			&:hover i{
+				color: #ff0000;
+			}
+		} 
+
+	
+}
+
+// Medium devices (tablets, less than 991px)
+@media (max-width: 991px) {
+	.newsContentBlock__item {
+		flex-direction: column;
+	}
+}

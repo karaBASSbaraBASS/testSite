@@ -1,0 +1,67 @@
+#mainCTA {
+  background: url(../img/iphone-7-features.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 37.875rem;
+  position: relative;
+}
+.mainCTA__Wrap {
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+.mainCTA__heding {
+  width: 593px;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+.mainCTA__descr {
+  width: 595px;
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 1.3125rem;
+}
+.mainCTA__buttons {
+	margin-top: 2.8125rem;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.mainCTA__select {
+	width: 18.125rem;
+	height: 3.75rem;
+	border-radius: 8px;
+	border: 4px solid #ff0000;
+	cursor: pointer;
+	position: relative;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+	span {
+		position: absolute;
+		top:calc(50% - 0.875rem);
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		color: #ff0000;
+		font-family: Helvetica;
+		font-size: 1.25rem;
+		font-weight: 700;
+	}
+	&:hover {
+		background-color: none;
+		background-color: #ff0000; 
+		span {
+			color: #FFF;
+		}
+	}
+}
+.mainCTA__select + .mainCTA__select {
+	margin-left: 15px;
+}
+

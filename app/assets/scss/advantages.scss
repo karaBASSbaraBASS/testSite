@@ -1,0 +1,61 @@
+.cryptoAdvantages__header {
+	padding-top: 4.375rem;
+	margin-bottom: 3.75rem;
+	width: 100%;
+	h1 {
+		color: #303030;
+		font-family: Helvetica;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 42px;
+		text-align: center;
+	}
+}
+.cryptoAdvantages {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.cryptoAdvantages__item {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 3.75rem;
+	h2 {
+		text-align: center;
+		color: #ff0000;
+		font-family: Helvetica;
+		font-size: 2.25rem;
+	}
+	span {
+		text-align: center;
+		color: #555555;
+		font-family: Helvetica;
+		font-size: 1.5rem;
+	}
+}
+.cryptoAdvantages__img {
+	background-size: 150px auto;
+	background-position: center, center !important;
+	height: 150px;
+	width: 150px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.cryptoAdvantages__managers {
+	background: url("../img/advantages/managers.png") no-repeat;
+}
+.cryptoAdvantages__analys {
+	background: url("../img/advantages/analys.png") no-repeat;
+}
+.cryptoAdvantages__webinars {
+	background: url("../img/advantages/webinars.png") no-repeat;
+}
+.cryptoAdvantages__learning {
+	background: url("../img/advantages/learning.png") no-repeat;
+}
+.cryptoAdvantages__platforms {
+	background: url("../img/advantages/platforms.png") no-repeat;
+}
+.cryptoAdvantages__support {
+	background: url("../img/advantages/support.png") no-repeat;
+}
